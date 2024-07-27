@@ -1,0 +1,64 @@
+en:
+  mailers:
+    enquiry:
+      user_confirmation:
+        subject: Thanks for getting in Touch
+  landings:
+    index:
+      hero:
+        heading: Short Term Accomodation in Kent
+        sub_heading: part of [The Accomodation Group](https://theaccommodationgroup.co.uk/ "The Accomodation Group")
+      benefits:
+        comfort:
+          image: comfort.jpg
+          brief: fully furnished Living Room, Kitchen and Bedrooms
+          copy: With fully furnished spaces and modern amenities such as Wi-Fi, laundry facilities, and cleaning services, your stay will feel like a home away from home.
+        flexibility:
+          image: flexibility.jpg
+          brief: choose a length of stay that suits you
+          copy: No long-term agreements, leases or commitments. Whether you need temporary housing for work, travel, or while transitioning between homes, you choose the length of stay that suits you.
+        price:
+          image: cost.jpg
+          brief: more cost effective than Hotel Accomodation
+          copy: With your own Kitchen facilities and prices inclusive of utility bills and based on the duration of your stay, you can stay within budget while enjoying the conveniences of home.
+      markets:
+        contractors:
+          image: contractors.jpg
+          copy:
+            Whether you are working at one of the many [Business Parks](https://www.novaloca.com/business-parks-industrial-estates/town/Kent_Dartford "Business Park and Industrial Estates in Dartford"),
+            a Tradesperson regenerating [Ebbsfleet](https://ebbsfleetgardencity.org.uk/regeneration, "Ebbsfleet Garden City Regeneration"),
+            improving [Dartford Town Centre](https://www.kent.gov.uk/roads-and-travel/road-projects/in-progress-road-projects/dartford-town-centre-improvements, "Dartford Town Centre Improvements")
+            or building new homes with [London Square](https://londonsquare.co.uk/developments/crayford, "Crayford Apartments and New Builds") in Crayford,
+            we can provide you with a comfortable place to stay.
+        temporary_homes:
+          image: temporary.jpg
+          copy:
+            Need temporary housing during a renovation,
+            exchanging contracts on a property,
+            or waiting for an insurance claim to be settled?
+            Our fully furnished properties provide comfort and convenience,
+            allowing you to focus on your transition without the hassle of finding a long-term rental.
+        education:
+          image: education.jpg
+          copy:
+            Are you a student at [Kent Adult Education Centre](https://www.kentadulteducation.co.uk/learning-with-us/centres/dartford/ "Kent Adult Education Centre"),
+            a professor visiting [North West Kent College](https://www.northkent.ac.uk/ "North West Kent College"),
+            a plumber or electrician renewing your NIC/EIC qualifications at [Able Skills](https://www.ableskills.co.uk/blog/able-skills-welcomes-bpec-to-its-dartford-training-centre/ "Able Skills"), [Goldcross Training](https://goldcross-training.co.uk/dartford/ "Goldcross Training") or the [British Gas Academy](https://britishgas-engineeringacademy.co.uk/our-services/training/training-centres/dartford/courses "British Gas Academy"),
+            or a mechanic undergoing [MOT training](https://thetestcentretraining.co.uk/dartford-mot-training-centre/ "The Test Centre Training")?
+            Our fully furnished properties provide a comfortable and convenient home base, allowing you to focus on your studies, work, or training without the stress of finding long-term housing.
+        healthcare:
+          image: healthcare.jpg
+          copy:
+            With multiple major medical facilities in the area, such as [Darent Valley](https://www.dgt.nhs.uk/visiting "Darent Valley Hospital")
+            and [Queen Mary's](https://www.dgt.nhs.uk/patients-and-visitors/visiting-queen-marys-hospital "Queen Mary's Hospital") Hospitals,
+            we offer flexible short term accommodation solutions tailored to the needs of patients seeking temporary housing near their treatment center,
+            family members needing a comfortable place to stay while supporting a loved one,
+            or healthcare staff on a short term assignment.
+        tourists:
+          image: tourist.jpg
+          copy:
+            Catch a show at the [Orchard](https://trafalgartickets.com/orchard-theatre-dartford/en-GB "The Orchard Theatre"),
+            explore the [Garden of England](https://www.visitkent.co.uk/studying-in-kent/the-garden-of-england/ "The Garden of England"),
+            or enjoy a relaxing break from city life with our flexible short-term accommodation solutions.
+            Our comfortable and convenient lodgings provide a home-away-from-home experience,
+            allowing you to fully immerse yourself in your visit while enjoying the comforts of a fully furnished residence.

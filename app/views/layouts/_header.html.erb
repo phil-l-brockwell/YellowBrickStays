@@ -1,0 +1,16 @@
+<header class="px-4 z-20 bg-black w-full fixed top-0 h-16 flex flex-row justify-between items-center text-primary-dark">
+  <div class="h-1/2">
+    <%= link_to image_tag('logo.png', class: 'h-full'), root_path %>
+  </div>
+
+  <div class="flex flex-col">
+    <%= mail_to Rails.application.credentials.contact_email, class: 'pl-1 hover:text-primary' do %>
+      <%= icon 'at-sign', class: 'h-4 inline' %>
+      <span class="inline font-light text-sm hidden md:inline"><%= Rails.application.credentials.contact_email %></span>
+    <% end %>
+    <%= link_to "tel:#{Rails.application.credentials.contact_telephone}", class: 'pl-1 hover:text-primary' do %>
+      <%= icon(:phone, class: 'h-4 inline') %>
+      <span class="inline font-light text-sm hidden md:inline"><%= Rails.application.credentials.contact_telephone %></span>
+    <% end %>
+  </div>
+</header>

@@ -1,0 +1,8 @@
+<footer class="bg-black w-full flex-auto flex justify-center items-center text-primary-dark text-xs h-[8vh]">
+  <%= link_to 'Privacy Policy', privacy_policies_path, class: 'm-2 hover:text-primary' %>
+  <%= link_to 'Terms & Conditions', terms_and_conditions_path, class: 'm-2 hover:text-primary' %>
+  <%= link_to 'The Accomodation Group', 'https://theaccommodationgroup.co.uk', class: 'm-2 hover:text-primary' %>
+  <%= link_to icon(:facebook, class: 'h-4 hover:text-primary'), Rails.application.credentials.facebook_address %>
+  <%= mail_to Rails.application.credentials.contact_email, icon('at-sign', class: 'h-4'), class: 'hover:text-primary' %>
+  <%= link_to icon(:phone, class: 'h-4'), "tel:#{Rails.application.credentials.contact_telephone}", class: 'hover:text-primary' %>
+</footer>

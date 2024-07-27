@@ -1,0 +1,54 @@
+<div class="h-screen w-full bg-cover absolute brightness-50" style="background-image: url(<%= image_path('splash-4.jpg') %>);"></div>
+<div class="h-screen w-full">
+  <div class='h-full flex flex-row justify-between items-center pl-5'>
+    <div class="z-10 p-5 text-white font-light drop-shadow-2xl">
+      <h2 class="text-xl font-thin mb-1">Looking for a place like home?</h2>
+      <h1 class="text-4xl ml-3 font-trajan text-primary-dark">GET IN TOUCH</h1>
+
+      <div class="w-full flex flex-wrap mt-4">
+        <div class="px-1">
+          <%= mail_to Rails.application.credentials.contact_email, class: 'pl-1 text-primary-dark hover:text-primary block' do %>
+            <%= icon 'at-sign', class: 'h-4 inline' %>
+            <span class="inline font-light text-sm"><%= Rails.application.credentials.contact_email %></span>
+          <% end %>
+          <%= link_to "tel:#{Rails.application.credentials.contact_telephone}", class: 'pl-1 text-primary-dark hover:text-primary block' do %>
+            <%= icon(:phone, class: 'h-4 inline') %>
+            <span class="inline font-light text-sm"><%= Rails.application.credentials.contact_telephone %></span>
+          <% end %>
+        </div>
+
+        <%= form_with url: enquiries_path, class: "w-full flex flex-wrap mt-4" do |form| %>
+          <div class="w-full px-1">
+            <%= form.label :name, 'Name*', class: 'text-sm mb-2 text-primary-dark' %>
+            <%= form.text_field :name, class: 'w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 focus:outline-none focus:bg-white', placeholder: 'Dorothy Gale', required: true %>
+          </div>
+
+          <div class="w-full px-1">
+            <%= form.label :email, 'Email*', class: 'text-sm mb-2 text-primary-dark' %>
+            <%= form.email_field :email, class: 'w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 focus:outline-none focus:bg-white', placeholder: 'ruby-slippers@kansas.com', required: true %>
+          </div>
+
+          <div class="w-full px-1">
+            <%= form.label :message, 'Message*', class: 'text-sm mb-2 text-primary-dark' %>
+            <%= form.text_area :message, class: 'w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 focus:outline-none focus:bg-white', placeholder: 'I\'m looking for a place with a kitchen - furnished, wifi, good price...', rows: 3 %>
+          </div>
+
+          <div class="w-full px-1 text-center">
+            <%= form.submit 'Send', class: 'w-full md:w-1/4 py-2 px-4 text-white font-medium hover:font-semibold bg-primary-dark hover:bg-primary' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="h-screen flex flex-col items-center justify-evenly">
+  <%= google_map(longitude: Rails.application.credentials.contact_longitude, latitude: Rails.application.credentials.contact_latitude, class: 'w-full h-2/3') %>
+
+  <div class="text-center">
+    <p>Yellow Brick Stays</p>
+    <p>Crayford,</p>
+    <p>Kent.</p>
+    <p>DA1 4FQ.</p>
+  </div>
+</div>
